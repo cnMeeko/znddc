@@ -1,0 +1,54 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Smart EV Manager",
+        "description": "Choose the login method, then enter the phone number or email and password bound in the official app.",
+        "data": {
+          "login_type": "Login method",
+          "account": "Account (phone / email)",
+          "password": "Password"
+        }
+      },
+      "select_machine": {
+        "title": "Select vehicle",
+        "description": "Multiple vehicles found, pick one to add.",
+        "data": {
+          "machine_no": "Vehicle"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate",
+        "description": "Credentials expired, please confirm the login method and sign in again.",
+        "data": {
+          "login_type": "Login method",
+          "account": "Account (phone / email)",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid account or password",
+      "invalid_account": "Invalid account format (phone must be 11 digits, email needs @ and domain)",
+      "cannot_connect": "Cannot reach the cloud API",
+      "no_device": "No bound vehicle found on this account",
+      "unknown": "Unknown error"
+    },
+    "abort": {
+      "already_configured": "This vehicle is already configured",
+      "reauth_successful": "Re-authentication successful",
+      "reauth_failed": "Re-authentication failed"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options",
+        "data": {
+          "scan_interval": "Polling interval (seconds)",
+          "address_lookup": "Reverse geocode to a Chinese address"
+        }
+      }
+    }
+  }
+}
